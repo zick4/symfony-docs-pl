@@ -42,7 +42,7 @@ przyjmuje wartość 120 lat wstecz od aktualnego roku.
 | Klasa                  | :class:`Symfony\\Component\\Form\\Extension\\Core\\Type\\BirthdayType`   |
 +------------------------+--------------------------------------------------------------------------+
 
-Opcje przesłoniane
+Opcje przesłaniane
 ------------------
 
 years
