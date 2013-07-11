@@ -5,8 +5,8 @@ Jak używać Varnish do przyspieszania stron www
 ==============================================
 
 Ponieważ mechanizm buforowania (ang. cache) Symfony2 używa standardowych
-nagłówków buforowania (ang. cache headers) protokołu HTTP, :ref:`symfony-gateway-cache`,
-może on zostać z łatwością zastąpiony przez jakikolwiek inny serwer "reverse proxy".
+nagłówków buforowania (ang. cache headers) protokołu HTTP, :ref:`symfony-gateway-cache`
+może zostać z łatwością zastąpione przez jakikolwiek inny serwer.
 Varnish to potężny, otwartoźródłowy akcelerator HTTP, który jest w stanie
 zarówno obsłużyć buforowane treści szybko, jak i zapewnić wsparcie dla
 języka znaczników :ref:`Edge Side Includes<edge-side-includes>`.
@@ -18,9 +18,9 @@ Konfiguracja
 ------------
 
 Jak wspomniano wcześniej, framework Symfony2 jest wystarczająco inteligentny, aby wykryć
-czy komunikacja przebiegała z udziałem serwera "reverse proxy" rozpoznającego ESI,
-czy też nie. Wszystko zadziała z automatu, jeśli używano serwera "reverse proxy"
-Symfony2, należy dokonać dodatkowej konfiguracji w chwili, gdy planuje się pracę z
+czy komunikacja przebiegała z udziałem serwera "odwrotnego proxy" rozpoznającego ESI,
+czy też nie. Wszystko zadziała z automatu, jeśli używano "odwrotnego proxy" Symfony2,
+należy natomiast dokonać dodatkowej konfiguracji w chwili, gdy planuje się pracę z
 akceleratorem Varnish. Na szczęście Symfony2 opiera się na jeszcze innym standardzie
 stworzonym przez Akamaï (`Architektura Edge`_), to też wskazówki konfiguracyjne w
 tym rozdziale powinny być przydatne nawet wówczas, gdy nie planuje się korzystać z Symfony2.
