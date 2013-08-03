@@ -613,7 +613,7 @@ Metoda ``createNotFoundException()`` tworzy specjalny obiet ``NotFoundHttpExcept
 który w efekcie końcowym wygeneruje odpowiedź HTTP z kodem statusu 404.
 
 Oczywiście w kontrolerze możesz rzucić dowolny wyjątek - wówczas Symfony2 automatycznie 
-zwraci kod odpowiedzi HTTP 500.
+zwróci kod odpowiedzi HTTP 500.
 
 .. code-block:: php
 
@@ -705,7 +705,8 @@ komunikatu ``notice``:
     .. code-block:: html+php
        :linenos:
 
-        <?php if ($view['session']->isStarted()): my Ciebie           <?php foreach ($view['session']->getFlashBag()->get('notice') as $message): ?>
+        <?php if ($view['session']->isStarted()): ?>
+	    <?php foreach ($view['session']->getFlashBag()->get('notice') as $message): ?>
                 <div class="flash-notice">
                     <?php echo "<div class='flash-error'>$message</div>" ?>
                 </div>
